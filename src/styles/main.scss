@@ -1,0 +1,99 @@
+/**
+ * 主要樣式檔
+ * 用途：定義全域基礎樣式
+ */
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* 重置與基礎樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* 容器 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-4;
+}
+
+/* 工具類別 */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: $spacing-4; }
+.mt-2 { margin-top: $spacing-8; }
+.mt-3 { margin-top: $spacing-12; }
+.mt-4 { margin-top: $spacing-16; }
+
+.mb-1 { margin-bottom: $spacing-4; }
+.mb-2 { margin-bottom: $spacing-8; }
+.mb-3 { margin-bottom: $spacing-12; }
+.mb-4 { margin-bottom: $spacing-16; }
+
+/* 錯誤訊息 */
+.error-message {
+  color: $error-color;
+  font-size: $font-size-sm;
+  margin-top: $spacing-2;
+  display: none;
+  
+  &.show {
+    display: block;
+  }
+}
+
+/* 成功訊息 */
+.success-message {
+  color: $success-color;
+  font-size: $font-size-sm;
+  margin-top: $spacing-2;
+}
+
+/* 載入動畫 */
+.loading {
+  @include flex-center;
+  
+  &::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid $primary-color;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 隱藏元素 */
+.hidden {
+  display: none !important;
+}
+
+/* 顯示元素 */
+.visible {
+  display: block !important;
+}

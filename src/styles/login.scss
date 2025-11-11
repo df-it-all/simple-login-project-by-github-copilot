@@ -1,0 +1,93 @@
+/**
+ * 登入頁面樣式
+ * 用途：定義登入頁面的專屬樣式
+ */
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.login-page {
+  @include flex-center;
+  min-height: 100vh;
+  padding: $spacing-4;
+}
+
+.login-container {
+  @include card;
+  width: 100%;
+  max-width: 400px;
+  
+  @include mobile {
+    padding: $spacing-6;
+  }
+}
+
+.login-title {
+  font-size: $font-size-2xl;
+  font-weight: 700;
+  color: $text-color;
+  margin-bottom: $spacing-2;
+}
+
+.login-subtitle {
+  font-size: $font-size-base;
+  color: #6B7280;
+  margin-bottom: $spacing-8;
+}
+
+.login-form {
+  .form-group {
+    margin-bottom: $spacing-6;
+  }
+  
+  label {
+    display: block;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: $spacing-2;
+  }
+  
+  input {
+    @include input-base;
+    
+    &.error {
+      border-color: $error-color;
+      
+      &:focus {
+        box-shadow: 0 0 0 3px rgba($error-color, 0.1);
+      }
+    }
+  }
+  
+  .submit-btn {
+    @include button-base;
+    width: 100%;
+    margin-top: $spacing-4;
+  }
+}
+
+.login-info {
+  margin-top: $spacing-8;
+  padding: $spacing-4;
+  background-color: #FEF3C7;
+  border-radius: $border-radius;
+  border: 1px solid #FCD34D;
+  
+  .info-title {
+    font-size: $font-size-sm;
+    font-weight: 600;
+    color: #92400E;
+    margin-bottom: $spacing-2;
+  }
+  
+  .info-item {
+    font-size: $font-size-sm;
+    color: #78350F;
+    margin-bottom: $spacing-1;
+    
+    strong {
+      font-weight: 600;
+    }
+  }
+}
