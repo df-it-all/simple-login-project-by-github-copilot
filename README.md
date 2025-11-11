@@ -4,6 +4,10 @@
 
 使用 Vanilla JavaScript、SCSS 和 Vite 建立的簡易登入系統網站。
 
+## 初始 prompt
+
+參閱 PR [#1](https://github.com/df-it-all/simple-login-project-by-github-copilot/pull/1)
+
 ## 專案描述與目標
 
 本專案是一個純前端的登入系統示範，展示如何使用現代化的前端工具建立一個簡潔、功能完整的使用者認證介面。主要目標包括：
