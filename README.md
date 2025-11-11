@@ -1,4 +1,6 @@
-# Foo Bar - 登入系統網站
+# 使用 Github Copilot 建置的「登入系統網站」
+
+![](https://img.shields.io/badge/Creator-Github%20Copilot-gray?logo=githubcopilot&logoColor=black&labelColor=white)
 
 使用 Vanilla JavaScript、SCSS 和 Vite 建立的簡易登入系統網站。
 
@@ -15,7 +17,7 @@
 ## 專案檔案結構
 
 ```
-foo-bar/
+/
 ├── index.html              # 登入頁面（主要入口）
 ├── welcome.html            # 歡迎頁面（登入後頁面）
 ├── vite.config.js          # Vite 設定檔
