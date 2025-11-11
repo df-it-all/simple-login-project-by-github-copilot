@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歡迎 - Foo Bar</title>
+  <link rel="stylesheet" href="/src/styles/main.scss">
+  <link rel="stylesheet" href="/src/styles/welcome.scss">
+</head>
+<body>
+  <div class="welcome-page">
+    <div class="welcome-container">
+      <div class="welcome-icon">👋</div>
+      
+      <h1 class="welcome-title">歡迎，<span id="username">使用者</span>！</h1>
+      <p class="welcome-subtitle">您已成功登入系統</p>
+      
+      <div class="user-info">
+        <div class="info-row">
+          <span class="info-label">使用者名稱</span>
+          <span class="info-value" id="username2">測試使用者</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">電子郵件</span>
+          <span class="info-value" id="userEmail">test@example.com</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">登入時間</span>
+          <span class="info-value" id="loginTime">2025-11-11 12:00:00</span>
+        </div>
+      </div>
+      
+      <div class="welcome-actions">
+        <button id="logoutBtn" class="btn-primary">登出</button>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/scripts/welcome.js"></script>
+</body>
+</html>
