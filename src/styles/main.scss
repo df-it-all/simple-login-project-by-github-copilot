@@ -3,8 +3,8 @@
  * 用途：定義全域基礎樣式
  */
 
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 /* 重置與基礎樣式 */
 * {

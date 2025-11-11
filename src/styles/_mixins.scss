@@ -3,7 +3,7 @@
  * 用途：定義可重用的樣式混合
  */
 
-@import 'variables';
+@use 'variables' as *;
 
 /**
  * 按鈕基礎樣式

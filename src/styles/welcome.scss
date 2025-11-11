@@ -3,8 +3,8 @@
  * 用途：定義歡迎頁面的專屬樣式
  */
 
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .welcome-page {
   @include flex-center;
@@ -92,7 +92,7 @@
     min-width: 120px;
     
     &:hover {
-      background-color: darken($background-color, 5%);
+      background-color: #E5E7EB;
     }
   }
 }

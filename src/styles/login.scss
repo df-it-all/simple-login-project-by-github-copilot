@@ -3,8 +3,8 @@
  * 用途：定義登入頁面的專屬樣式
  */
 
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .login-page {
   @include flex-center;
